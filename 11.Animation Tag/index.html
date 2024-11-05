@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+
+    @keyframes pulse {
+        0% { transform: scale(1);}
+        50% { transform: scale(2);}
+        100% { transform: scale(1);}
+    }
+    .visual {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: inline;
+    }
+    .circle-yellow {
+        width: 40px;
+        height: 40px;
+        background-color: #FFA310;
+        border-radius: 50%;
+        animation: pulse 3s;  /* animation name and duration */
+        animation-iteration-count: 5; /* number of repeat*/ /* if we use 'infinite', it repeats forever. */
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="visual">
+        <div class="circle-yellow"></div>
+    </div>
+</body>
+</html>
